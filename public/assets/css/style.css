@@ -1,0 +1,83 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.overlay-header {
+  background: linear-gradient(
+    90deg,
+    #f6f6f6 64.37%,
+    rgba(241, 247, 255, 0) 100%
+  );
+}
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  height: 100%;
+}
+.default-orange {
+  background: #ff7643;
+}
+.default-orange-text {
+  color: #ff7643;
+}
+.h-screen-header {
+  height: calc(100vh - 109px);
+}
+.hover\:px-10:hover {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+section.cards .card .card-img {
+  width: 72px;
+  height: 72px;
+}
+.gallery-thumbs .swiper-slide {
+  opacity: 0.5;
+  height: 80px;
+}
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.about-list {
+  transition: 0.3s;
+}
+.about-list .left span {
+  transition: 0.3s;
+  font-size: 24px;
+  line-height: 40px;
+}
+.about-list:hover .left span {
+  color: white;
+}
+.about-list .right p {
+  transition: 0.3s;
+}
+.about-list:hover .right p {
+  color: white;
+}
+.about-list:hover {
+  background: #ff7643;
+}
+svg path {
+  transition: 0.3s;
+}
+.about-list:hover svg path {
+  fill: #fff;
+}
+@media (max-width: 767px) {
+  .navbar-links {
+    max-height: 0px;
+    overflow-y: hidden;
+    transition: 500ms;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .navbar-links.active {
+    max-height: 1000px;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
